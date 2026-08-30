@@ -1,0 +1,28 @@
+.Bomb {
+    background: black;
+    border: 2px solid Grey;             
+    box-shadow: none;                
+    outline: none;                   
+    -webkit-appearance: none;       
+    appearance: none;    
+    color: whitesmoke;
+    height: 110px;
+    width: 110px;
+    font-size: 50px;
+}
+
+#Text {
+  position: relative;
+  top: 0px;
+  left: 100px;
+  font-size: 50px;
+}
+
+#Start {
+  height: 70px;
+  width: 140px;
+  font-size: 50px;
+}
+
+
+
