@@ -24,5 +24,13 @@
   font-size: 50px;
 }
 
+#Stop {
+  height: 70px;
+  width: 140px;
+  font-size: 50px;
+  position: relative;
+  left: 50px;
+}
+
 
 
