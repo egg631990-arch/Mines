@@ -2,6 +2,16 @@ var gameActive = false;
 var Random = -1;
 var Cell = document.getElementsByClassName('Bomb');
 
+function resetGame() {
+    gameActive = false;
+    Start.disabled = false;
+    for (var i = 0; i < Cell.length; i++) {
+        Cell[i].textContent = '?';
+        Cell[i].disabled = true;
+    }
+    Random = -1;
+}
+
 var Start = document.getElementById('Start');
 Start.onclick = function() {
     Start.disabled = true;
@@ -53,4 +63,12 @@ function CellClick(CellNum) {
         button.textContent = '︎ ︎ ︎';
         button.disabled = true;
     }
+}
+
+var Stop = document.getElementById("Stop");
+
+Stop.onclick = function Stop() {
+    console.log("Стоп!");
+    alert("Вы остановились");
+    resetGame();
 }
